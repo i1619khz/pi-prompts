@@ -1,0 +1,25 @@
+{
+	"name": "pi-prompts",
+	"version": "0.1.0",
+	"private": true,
+	"type": "module",
+	"description": "omp 扩展：精确修补系统提示词中被 omp 生成、模板改不到的部分",
+	"omp": {
+		"extensions": [
+			"./src/index.ts"
+		]
+	},
+	"scripts": {
+		"test": "bun test",
+		"typecheck": "tsc --noEmit",
+		"install": "bun run scripts/install.ts",
+		"uninstall": "bun run scripts/uninstall.ts",
+		"install:project": "bun run scripts/install.ts --project",
+		"uninstall:project": "bun run scripts/uninstall.ts --project"
+	},
+	"devDependencies": {
+		"@oh-my-pi/pi-coding-agent": "^18.18.6",
+		"@types/bun": "^1.4.0",
+		"typescript": "^5.7.0"
+	}
+}
